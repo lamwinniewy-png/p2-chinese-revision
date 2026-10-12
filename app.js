@@ -279,6 +279,7 @@ function buildSet(mode) {
     b.filter(q => !q.tag).slice(0, 7).forEach(push);
     b.filter(q => q.tag).slice(0, 2).forEach(push);
     push(listenQ(t));
+    for (const q of b) { if (qs.length >= 10) break; push(q); }
     return shuffle(qs).map(prep);
   }
   b.slice(0, 10).forEach(push);

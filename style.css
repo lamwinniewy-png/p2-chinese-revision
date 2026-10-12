@@ -213,7 +213,7 @@ input[type=range]{width:min(560px,90%);height:44px;accent-color:var(--hot)}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
 /* ===== Chinese site additions ===== */
-:root{--f-kai:'LXGW WenKai TC','Kaiti TC','BiauKai','STKaiti','Noto Sans TC',serif}
+:root{--f-kai:'Kaiti TC','BiauKai','Noto Sans TC',serif}
 .emo-badge{display:grid;place-items:center;font-size:46px;line-height:1;background:rgba(255,255,255,.75);border-radius:50%;border:3px solid #fff}
 .emo-big{font-size:48px;line-height:1}
 .voice-note{margin-top:8px;font-size:14px;color:var(--ink2);font-weight:500}
@@ -226,7 +226,7 @@ input[type=range]{width:min(560px,90%);height:44px;accent-color:var(--hot)}
 .choice{font-family:var(--f-kai);font-size:26px}
 .choices.long{grid-template-columns:1fr}
 .choices.long .choice{justify-content:flex-start;text-align:left;font-size:23px}
-.choice.sel{background:var(--sky);border-color:var(--sky-d)}
+.choice.sel{background:#BFE2FB;border-color:var(--sky-d);box-shadow:inset 0 0 0 3px var(--sky-d)}
 .multi-tip{margin:12px 0 0;font-size:16px;color:var(--ink2);font-weight:700}
 
 /* reader */
@@ -291,5 +291,6 @@ input[type=range]{width:min(560px,90%);height:44px;accent-color:var(--hot)}
 .passage p{font-family:var(--f-kai);font-size:21px;line-height:1.8;text-indent:2em;margin:4px 0}
 .tbl td{font-family:var(--f-zh)}
 .learn-card .eg{font-family:var(--f-kai);font-size:21px}
-.grid{grid-template-columns:repeat(3,1fr)}
 @media (max-width:600px){.fw{font-size:72px}.ptext{font-size:23px;padding:14px}.choice{font-size:22px}}
+.icon-btn{white-space:nowrap}
+@media (max-width:600px){.mode-row{grid-template-columns:1fr 1fr!important}.mode-btn{min-height:64px;font-size:18px}}
